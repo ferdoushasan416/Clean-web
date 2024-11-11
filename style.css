@@ -258,6 +258,10 @@ Header Css Start
   }
 }
 @media only screen and (max-width: 991px){
+.site-header .menu > .menu-item > .sub-menu > .menu-item > a:hover,
+.site-header .menu > .menu-item:hover > a{
+	color: var(--theme-color);
+}
   .site-header .open-nav-menu {
     width: auto;
   }
@@ -312,9 +316,70 @@ Header Css End
 ============================
 */
 
-
-
-
+.hero-section {
+	position: relative;
+	padding-bottom: 500px;
+	padding-top: 100px;
+}
+.hero-section::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 518px;
+	background-image: url(assets/images/hero-shape.png);
+	background-size: cover;
+	background-position: center top;
+}
+  .hero-content {
+	padding-bottom: 17px;
+  }
+  .hero-content span {
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 58.51px;
+	color: var(--primary-color);
+	display: block;
+  }
+  .hero-content h1 {
+	font-size: 48px;
+	color: var(--primary-color);
+	font-weight: 700;
+	margin: 30px 0;
+  }
+  .hero-content p {
+	font-size: 16px;
+	line-height: 19px;
+  }
+  .hero-btn {
+	margin-top: 40px;
+}
+  .appointment-btn {
+	background-color: var(--theme-color);
+	display: inline-flex;
+	border-radius: 40px;
+}
+.appointment-btn a {
+	font-size: 20px;
+	padding: 10px 14px 10px 32px;
+	color: var(--white-color);
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	column-gap: 12px;
+}
+  .appointment-btn i {
+	width: 48px;
+	height: 48px;
+	background-color: #FFD600;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	font-size: 20px;
+	
+  }
 
 
 /*

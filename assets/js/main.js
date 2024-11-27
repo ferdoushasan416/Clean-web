@@ -107,6 +107,37 @@ $(document).ready(function(){
 		}
 	  ]
 	});
+	$('.testimonial-review-box').slick({
+	  autoplay:false,
+	  slidesToShow: 3,
+	  loop:true,
+	  arrows:false,
+	  dots:false,
+	  centerMode: true,
+	  focusOnSelect: true,
+	  responsive: [
+		{
+		  breakpoint: 1199,
+		  settings: {
+			slidesToShow: 3,
+		  }
+		},
+		{
+		  breakpoint: 991,
+		  settings: {
+			slidesToShow: 2,
+			slidesToScroll: 2
+		  }
+		},
+		{
+		  breakpoint: 767,
+		  settings: {
+			slidesToShow: 1,
+			slidesToScroll: 1
+		  }
+		}
+	  ]
+	});
   });
 /* magnificPopup img view */
 $('.popup-image').magnificPopup({
